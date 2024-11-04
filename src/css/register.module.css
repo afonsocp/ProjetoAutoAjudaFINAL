@@ -1,0 +1,164 @@
+.loginRegister {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Archivo", sans-serif;
+}
+
+.logoAutoajuda {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  width: 400px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #444444;
+  border-radius: 15px;
+  width: 400px;
+  height: 600px;
+}
+
+.containerRegister {
+  height: 60%;
+}
+
+.tituloRegister {
+  font-size: 38px;
+  font-weight: 600;
+  margin-top: 1%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.subtituloRegister {
+  font-size: 11.7px;
+  font-weight: 600;
+  color: #2f2f2f;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.formRegister {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 5px;
+}
+
+.inputNomeRegister,
+.inputEmailRegister,
+.inputNascimentoRegister,
+.inputCelularRegister,
+.inputGeneroRegister,
+.inputCpfRegister {
+  border-radius: 20px;
+  border: 1.8px solid #777777;
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.buttonRegister {
+  background-color: #c2c2c2;
+  color: #494949;
+  width: 100%;
+  height: 45px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buttonRegister:hover {
+  background-color: #00a3ff;
+  color: white;
+}
+
+.buttonRegister:focus,
+.buttonRegister:active {
+  outline: none;
+}
+
+.setaDireita {
+  margin-right: 12.5px;
+  font-size: 22.5px;
+}
+
+.footerContentRegister {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+#portologorodape {
+  width: 200px;
+  height: auto;
+}
+
+.socialIconsRegister {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#textorodape {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .logoAutoajuda {
+    width: 300px;
+  }
+
+  .containerRegister {
+    width: 350px;
+    height: 500px;
+  }
+
+  .tituloRegister {
+    margin-top: 10%;
+    font-size: 34px;
+  }
+
+  .subtituloRegister {
+    font-size: 12.4px;
+  }
+
+  .footerContentRegister {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .logoAutoajuda {
+    width: 250px;
+  }
+
+  .containerRegister {
+    width: 90%;
+    max-width: 355px;
+    height: auto;
+  }
+}

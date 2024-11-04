@@ -1,0 +1,243 @@
+.header {
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 2px solid #D3D3D3;
+    z-index: 999; 
+}
+
+.navtop {
+    position: relative; 
+    z-index: 998; 
+}
+
+.nav {
+    font-family: "Inter", sans-serif;
+    display: flex;
+}
+
+.navlink {
+    text-decoration: none;
+    margin-right: 15px;
+    color: black;
+}
+
+.navlink:hover {
+    color: #00A3FF;
+}
+
+.textoprincipal {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 7%;
+    width: 900px;
+    font-size: 25px;
+    z-index: 997; 
+}
+
+.subtitulo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid black;
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin-top: 5px;        
+}
+
+.segundafrase {
+    color: #595959;
+}
+
+.terceirafrase {
+    font-size: larger;
+    color: #00A3FF;
+}
+
+.button {
+    border-radius: 13px;
+    width: 55%;
+    padding: 0.3rem;
+    font-family: "Archivo", sans-serif;
+    font-size: large;
+    color: white;
+    background-color: #00A3FF;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.portologorodape {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+}
+
+.imagemdireita {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: auto;
+    z-index: 996; 
+}
+
+@media (max-width: 1400px) {
+    .header {
+        width: 100%;
+    }
+
+    .textoprincipal {
+        width: 55%;
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .button {
+        width: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .hamburguer {
+        display: block;
+        margin-left: 300px;
+    }
+
+    .nav {
+        position: fixed;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    .textoprincipal {
+        padding: 5%;
+        width: 89%;
+        font-size: 18px;
+        align-items: flex-start; 
+        text-align: start;
+        margin-left: 85px; 
+    }
+
+    .button {
+        width: 87%;
+        font-size: medium;
+        align-self: center;
+        margin-right: 70px;
+    }
+
+    .footercontent {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer {
+        position: relative;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .imagemdireita {
+        position: relative;
+        height: auto;
+        width: 70%;
+        margin: 0 auto; 
+        margin-bottom: 70px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hamburguer {
+        display: block;
+        margin-left: 200px;
+    }
+    
+    .header {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        display: flex;
+        gap: 32px;
+    }
+
+    .navlink {
+        margin-bottom: 10px;
+    }
+
+    .textoprincipal {
+        display: flex;
+        padding: 5%;
+        font-size: 15px;
+        align-items: flex-start; 
+        text-align: start;
+        width: 75%;
+        margin: 0 auto; 
+    }
+
+    .maincontent {
+        justify-content: center;
+    }
+
+    .button {
+        font-size: medium;
+        align-self: center;
+        width: 92%;
+        margin: 0 auto; 
+    }
+
+    .footercontent {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer {
+        position: relative;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .imagemdireita {
+        position: relative;
+        height: auto;
+        width: 60%;
+        margin: 0 auto; 
+        margin-bottom: 70px;
+        border-radius: 12px;
+    }
+}

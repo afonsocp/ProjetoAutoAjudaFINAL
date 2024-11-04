@@ -1,0 +1,76 @@
+.integrantesWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  gap: 20px;
+}
+
+.logoAutoajuda {
+  width: 200px;
+  height: auto;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.item {
+  flex-shrink: 0;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.githubLink {
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--blueBrand);
+  font-weight: bold;
+}
+
+.githubLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

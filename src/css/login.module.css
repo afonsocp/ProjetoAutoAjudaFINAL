@@ -1,0 +1,137 @@
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Archivo", sans-serif;
+}
+
+.logoAutoajuda {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  width: 400px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #444444;
+  border-radius: 15px;
+  width: 400px;
+  height: 600px;
+}
+
+.titulo {
+  font-size: 38px;
+  font-weight: 600;
+  margin-top: 20%;
+  margin-bottom: 0;
+}
+
+.subtitulo {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-bottom: 0;
+}
+
+.form {
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  gap: 30px;
+}
+
+.inputCpf,
+.inputSenha {
+  border-radius: 15px;
+  border: 1.8px solid #777777;
+  width: 330px;
+  height: 45px;
+  padding: 8px 0 8px 15px;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.buttonLogin {
+  background-color: #c2c2c2;
+  color: #494949;
+  width: 330px;
+  height: 45px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  outline: none;
+  border: none;
+}
+
+.buttonLogin:hover {
+  background-color: #00a3ff;
+  color: white;
+}
+
+.buttonLogin:focus,
+.buttonLogin:active {
+  outline: none;
+}
+
+.setaDireita {
+  margin-right: 12.5px;
+  font-size: 22.5px;
+}
+
+.tituloBaixo {
+  font-size: 18.2px;
+  font-weight: 500;
+  margin-top: 70px;
+}
+
+.subtituloBaixo {
+  font-size: 29px;
+  font-weight: 600;
+  color: #0046c3;
+  text-decoration: none;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .logoAutoajuda {
+    width: 300px;
+  }
+
+  .container {
+    width: 350px;
+    height: 500px;
+  }
+
+  .titulo {
+    margin-top: 10%;
+    font-size: 34px;
+  }
+
+  .tituloBaixo {
+    margin-top: 50px;
+    font-size: 17px;
+  }
+
+  .subtituloBaixo {
+    font-size: 27px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

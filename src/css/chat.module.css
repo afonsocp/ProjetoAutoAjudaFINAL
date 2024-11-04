@@ -1,0 +1,114 @@
+.logoAutoajuda {
+  width: 400px;
+  height: auto;
+  margin: 45px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+}
+
+.messageListBot {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.messageListUser {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.bot,
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.botIcon,
+.userIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.messageBot {
+  background-color: #e6e6e6;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--background);
+}
+
+.search input {
+  width: 90%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.arrowIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.integrantesLink {
+  margin-top: 20px;
+  text-align: center;
+  color: #00a3ff;
+  text-decoration: none;
+}
+
+.integrantesLink h1 {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .chatContainer {
+    width: 80%;
+  }
+
+  .logoAutoajuda {
+    width: 300px;
+    margin: 20px;
+  }
+}
