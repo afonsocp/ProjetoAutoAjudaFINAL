@@ -1,0 +1,30 @@
+Membros do grupo:
+Kaique Richard Suzart de Freitas (Rm: 555607) 
+Afonso Correia Pereira (Rm: 557863)
+Sofia Domingues Gonçalves (Rm: 554920)
+
+Este projeto visa analisar o desempenho dos alunos na academia, com foco na análise exploratória de dados e modelagem de performance. Abaixo estão os passos e orientações para configurar e utilizar o sistema.
+
+O projeto possui a seguinte estrutura de diretórios e arquivos:
+
+- `data/`: Contém os arquivos de dados utilizados para análise e modelagem.
+  - `alunos.csv`: Dados cadastrais dos alunos.
+  - `desempenho.csv`: Dados de desempenho individual.
+  - `historico.csv`: Histórico de atividades dos alunos.
+- `notebooks/`: Contém notebooks Jupyter para análise e modelagem.
+  - `analise_exploratoria.ipynb`: Notebook para análise exploratória dos dados.
+  - `modelagem.ipynb`: Notebook para criação e avaliação de modelos.
+- `src/`: Pasta com scripts Python para manipulação e pré-processamento dos dados.
+  - `preprocessamento.py`: Script para limpar e organizar os dados.
+  - `modelos.py`: Contém funções para criação de modelos de análise de desempenho.
+- `README.md`: Arquivo principal de documentação.
+- `requirements.txt`: Arquivo com as dependências necessárias para rodar o projeto.
+
+Certifique-se de ter os seguintes programas e bibliotecas instalados:
+
+- Python 3.8+
+- Jupyter Notebook
+- Bibliotecas Python listadas em `requirements.txt` (instale com o comando abaixo)
+
+```bash
+pip install -r requirements.txt
